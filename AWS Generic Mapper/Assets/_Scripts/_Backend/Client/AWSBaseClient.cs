@@ -11,7 +11,7 @@ namespace DynamoDBMapper.Backend.Client
 {
     abstract public class AWSBaseClient : MonoBehaviour
     {
-        private string IdentityPoolId = "eu-central-1:e7693afb-a19f-4273-bbe9-31adaabf8032";
+        private string IdentityPoolId = "";
         private string CognitoPoolRegion = RegionEndpoint.EUCentral1.SystemName;
         private string DynamoRegion = RegionEndpoint.EUCentral1.SystemName;
 
