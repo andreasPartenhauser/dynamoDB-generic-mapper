@@ -59,7 +59,7 @@ namespace DynamoDBMapper.Backend.Client
             {
                 TableName = TableName()
             };
-            if (filter.Count > 0) {
+            if (filter != null && filter.Count > 0) {
                 request.ScanFilter = filter;
             }
             

@@ -6,8 +6,12 @@ namespace DynamoDBMapper.Model
 {
     public class AchievementModel : Model
     {
-        public string name { get; set; }
+        public string Name { get; set; }
 
-        public float completion { get; set; }
+        public float Completion { get; set; }
+
+        public override string ToString() {
+            return "Achievement: " + Name + " - completed: " + Completion;
+        }
     }
 }

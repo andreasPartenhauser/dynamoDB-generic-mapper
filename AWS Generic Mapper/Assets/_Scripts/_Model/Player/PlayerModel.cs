@@ -4,17 +4,22 @@ namespace DynamoDBMapper.Model
 {
     public class DemoSimplePlayer: Model
     {
-        public string id { get; set; }
-        public string name { get; set; }
-        public int age { get; set; }
-        public bool registered { get; set; }
-        public string email { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public bool Registered { get; set; }
+        public string EMail { get; set; }
     }
 
-    public class DemoComplexPlayer : DemoSimplePlayer
+    public class DemoComplexPlayer : Model
     {
-        public List<AchievementModel> achievements;
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public bool Registered { get; set; }
+        public string EMail { get; set; }
+        public List<AchievementModel> Achievements { get; set; }
 
-        public int conins { get; set; }
+        public int Conins { get; set; }
     }
 }

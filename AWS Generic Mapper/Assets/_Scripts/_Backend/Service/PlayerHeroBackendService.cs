@@ -12,14 +12,22 @@ namespace DynamoDBMapper.Backend.Service
             client = Camera.main.GetComponent<Loader>().GetComponent<AWSPlayerClient>();
         }
 
-        public void RequestSimplePlayers()
+        public void LoadSimplePlayers()
         {
-            client.RequestSimplePlayers();
+            client.LoadSimplePlayers();
         }
 
-        public void RequestComplexPlayers()
+        public void LoadComplexPlayers()
         {
-            client.RequestComplexPlayers();
+            client.LoadComplexPlayers();
+        }
+
+        public void AddSimplePlayers() {
+            client.AddSimplePlayers();
+        }
+
+        public void AddComplexPlayers() {
+            client.AddComplexPlayers();
         }
     }
 
