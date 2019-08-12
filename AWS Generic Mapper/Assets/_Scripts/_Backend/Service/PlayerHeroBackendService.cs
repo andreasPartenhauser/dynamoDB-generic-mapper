@@ -9,7 +9,7 @@ namespace DynamoDBMapper.Backend.Service
 
         public PlayerHeroBackendService()
         {
-            client = Camera.main.GetComponent<Loader>().GetComponent<AWSPlayerClient>();
+            client = Camera.main.GetComponent<AWSPlayerClient>();
         }
 
         public void LoadSimplePlayers()
