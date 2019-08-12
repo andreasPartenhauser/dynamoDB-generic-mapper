@@ -16,20 +16,6 @@ namespace DynamoDBMapper.Backend.Client
 
     public class AWSPlayerClient : AWSBaseClient, IPlayerHeroClient
     {
-        private IAmazonDynamoDB _client;
-        private DynamoDBContext _context;
-
-        private DynamoDBContext Context
-        {
-            get
-            {
-                if (_context == null)
-                    _context = new DynamoDBContext(_client);
-
-                return _context;
-            }
-        }
-
         public override string TableName()
         {
             return "DemoPlayer";
@@ -37,7 +23,6 @@ namespace DynamoDBMapper.Backend.Client
 
         void Awake()
         {
-            _client = Client;
             CreateTables();
         }
         // Start is called before the first frame update
