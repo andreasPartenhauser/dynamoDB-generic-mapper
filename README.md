@@ -20,6 +20,8 @@ DynamoDB-Generic-Mapper is a Basic architectural aproach to do CRUD operations o
 - [x] Example for creating a Table, inserting (put) items and reading items from DynamoDB
 - [ ] Mapping objects to Dictionary<string, AttributeValue>
 - [ ] Full CRUD example for DynamoDB Access
+- [ ] Handle Edge cases in MapModel (List<PrimitveType>)
+- [ ] Error Handling
 
 ## Requirements
 
@@ -56,6 +58,7 @@ You can call any methods implemented in the Unity Lifecycle or add Buttons to th
 - Add a property client of type `I*YourNameClient` and just forward all methods to the client.
 - Add a default constructor and add the following line `Camera.main.GetComponent<YourName*Client>()`
 - You can construct the service anywhere in your project and make calls to the methods implemented.
+
 [see the Medium article to understand the Service Architecture](**Insert Medium Link**)
 
 ## FAQ

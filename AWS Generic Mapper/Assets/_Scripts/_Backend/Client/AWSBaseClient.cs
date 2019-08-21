@@ -6,6 +6,7 @@ using Amazon.CognitoIdentity;
 using Amazon.Runtime;
 using Amazon;
 using Amazon.DynamoDBv2.Model;
+using DynamoDBMapper.Mapping;
 
 namespace DynamoDBMapper.Backend.Client
 {

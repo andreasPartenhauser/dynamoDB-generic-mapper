@@ -1,14 +1,18 @@
 ﻿using System;
 
-static class EnumExtensions
+namespace DynamoDBMapper.Utility
 {
-    public static T GetEnum<T>(this string itemName)
+    static class EnumExtensions
     {
-        return (T) GetEnum(itemName, typeof(T));
-    }
+        public static T GetEnum<T>(this string itemName)
+        {
+            return (T)GetEnum(itemName, typeof(T));
+        }
 
-    public static object GetEnum(this string itemName, Type type)
-    {
-        return Enum.Parse(type, itemName, true);
+        public static object GetEnum(this string itemName, Type type)
+        {
+            return Enum.Parse(type, itemName, true);
+        }
     }
 }
+
