@@ -43,6 +43,14 @@ Before you can test the example, you need to setup your AWS Cognito Identity Poo
 In `AWSBaseClient` you need to insert your own `IdentityPoolId`. If this is configured you can run the `DynamoDBMapperDemo` Scene and you will see in the console if a table was created successfully. If so, you can Add simple and complex Players and Load them again. You will see the results in the console.
 Use Debugger for Unity with Visual Studio Code to get a deeper look into what happens.
 
+### Import the Unity Package
+
+There are actually two unitypackage files.
+- dynamoDB-generic-mapper-Base
+- dynamoDB-generic-mapper-Full
+Use the Base package if you just want to have the plain code to get started with DynamoDB. There no AWS code, loading or examples are included. So you also need to import the AWS unitypackages by yourself. Also the in the following as optional described Service layer is not part of this, since this layer would need to know your domain objects already.
+Use the Full package if you want to have an (almost) running example. The only thing that is needed - as described above - is to setup the `IdentityPoolId` of your pool. And mybe change the region, if you are not on eu1 (Frankfurt)
+
 ## Usage
 
 To extend the AWSBaseClient and insert your own entities you need to do the following:
