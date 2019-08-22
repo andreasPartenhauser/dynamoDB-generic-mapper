@@ -48,6 +48,7 @@ Use Debugger for Unity with Visual Studio Code to get a deeper look into what ha
 There are actually two unitypackage files.
 - dynamoDB-generic-mapper-Base
 - dynamoDB-generic-mapper-Full
+
 Use the Base package if you just want to have the plain code to get started with DynamoDB. There no AWS code, loading or examples are included. So you also need to import the AWS unitypackages by yourself. Also the in the following as optional described Service layer is not part of this, since this layer would need to know your domain objects already.
 Use the Full package if you want to have an (almost) running example. The only thing that is needed - as described above - is to setup the `IdentityPoolId` of your pool. And mybe change the region, if you are not on eu1 (Frankfurt)
 
